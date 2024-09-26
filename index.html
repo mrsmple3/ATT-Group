@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" href="./assets/imgs/logo.svg" type="image/x-icon" />
+		<link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon" />
 
 		<link rel="stylesheet" href="./style/swiper.min.css" />
 		<link rel="stylesheet" href="./style/intTelInput/intlTelInput.min.css" />
@@ -37,11 +37,11 @@
 				<img src="./assets/icons/logo.svg" alt="" class="custom-logo" />
 			</a>
 			<nav>
-				<a href="./about.html" class="nav__item">О КОМПАНИИ</a>
-				<a href="./about.html" class="nav__item">НАША МИССИЯ</a>
-				<a href="./about.html" class="nav__item">ПАРТНЕРЫ</a>
-				<a href="./about.html" class="nav__item">КАРЬЕРА</a>
-				<a href="./about.html" class="nav__item">НАШ БИЗНЕС</a>
+				<a href="#about" class="nav__item">О КОМПАНИИ</a>
+				<a href="#mission" class="nav__item">НАША МИССИЯ</a>
+				<a href="#partners" class="nav__item">ПАРТНЕРЫ</a>
+				<a href="#cariere" class="nav__item">КАРЬЕРА</a>
+				<a href="#buissnes" class="nav__item">НАШ БИЗНЕС</a>
 				<div class="dropdown-lang">
 					<div class="current-lang">RU</div>
 					<ul class="dropdown-list">
@@ -50,31 +50,387 @@
 						<li class="item-dropdown">UZ</li>
 					</ul>
 				</div>
+				<div class="burger-btn__container">
+					<div class="burger-btn__replacer"></div>
+					<img src="./assets/icons/burger-btn.svg" alt="" class="burger-btn" />
+					<img src="./assets/icons/circle-xmark.svg" alt="" class="circle-xmark" />
+				</div>
 			</nav>
-			<a href="./contacts.html" class="contact-btn">КОНТАКТЫ</a>
+			<a href="#contacts" class="contact-btn">КОНТАКТЫ</a>
 		</header>
+		<div class="mobile-menu">
+			<div class="mobile-menu__container">
+				<div class="mobile-menu__span">Навигация</div>
+				<nav class="mobile-menu__nav">
+					<a href="#about" class="mobile-menu__item">О компании</a>
+					<a href="#mission" class="mobile-menu__item">Наша миссия</a>
+					<a href="#partners" class="mobile-menu__item">Партнеры</a>
+					<a href="#cariere" class="mobile-menu__item">Карьера</a>
+					<a href="#buissnes" class="mobile-menu__item">Наш бизнес</a>
+					<a href="#contacts" class="mobile-menu__item">Контакты</a>
+				</nav>
+				<div class="phone">
+					<span>Номер телефона</span>
+					<a href="tel:+998 (55) 514-90-00">+998 (55) 514-90-00</a>
+				</div>
+				<a href="mail:info@aat-group.uz" class="mail">info@aat-group.uz</a>
+				<p class="address">г.Ташкент, Юнусабадский район, проспект Амира Темура, 107Б<br /><br /></p>
+				<div class="socialmedia">
+					<a href="" target="_blank" class="telegram">
+						<img src="./assets/icons/socmedia-1.svg" alt="" />
+					</a>
+					<a href="" target="_blank" class="instagram">
+						<img src="./assets/icons/socmedia-2.svg" alt="" />
+					</a>
+					<a href="" target="_blank" class="facebook">
+						<img src="./assets/icons/socmedia-3.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
 		<!-- header end -->
 		<main>
 			<div class="swiper main-slider">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="./assets/imgs/offer-img.jpg" alt="" class="offer-img" />
-						<div class="offer">
-							<span class="span-text">AAT GROUP</span>
-							<h1>Группа компаний, объединяющая все ресурсы для достижения общего успеха</h1>
+						<div class="slide__container" data-swiper-parallax="50%">
+							<img src="./assets/imgs/offer-img.jpg" alt="" class="main__img" />
+							<div class="offer" data-swiper-parallax="50%">
+								<div class="offer__content">
+									<div class="flex-col-start">
+										<span class="span-text">AAT GROUP</span>
+										<h1>Группа компаний, объединяющая все ресурсы для достижения общего успеха1</h1>
+									</div>
+									<div class="flex-col-start sub__container">
+										<p class="sub">
+											Мы — команда профессионалов, которые верят в силу командной работы, стремятся к достижению общих целей и готовы делиться своим опытом и
+											знаниями.
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="subtitles">
-							<p class="sub">
-								Мы — команда профессионалов, которые верят в силу командной работы, стремятся к достижению общих целей и готовы делиться своим опытом и
-								знаниями.
-							</p>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide__container" data-swiper-parallax="50%">
+							<img src="./assets/imgs/offer-img.jpg" alt="" class="main__img" />
+							<div class="offer" data-swiper-parallax="50%">
+								<div class="offer__content">
+									<div class="flex-col-start">
+										<span class="span-text">AAT GROUP</span>
+										<h1>Группа компаний, объединяющая все ресурсы для достижения общего успеха2</h1>
+									</div>
+									<div class="flex-col-start sub__container">
+										<p class="sub">
+											Мы — команда профессионалов, которые верят в силу командной работы, стремятся к достижению общих целей и готовы делиться своим опытом и
+											знаниями.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide__container" data-swiper-parallax="50%">
+							<img src="./assets/imgs/offer-img.jpg" alt="" class="main__img" />
+							<div class="offer" data-swiper-parallax="50%">
+								<div class="offer__content">
+									<div class="flex-col-start">
+										<span class="span-text">AAT GROUP</span>
+										<h1>Компания компаний, объединяющая все ресурсы для достижения общего успеха3</h1>
+									</div>
+									<div class="flex-col-start sub__container">
+										<p class="sub">
+											Мы — команда профессионалов, которые верят в силу командной работы, стремятся к достижению общих целей и готовы делиться своим опытом и
+											знаниями.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offer__fraction">
+					<span class="fraction__current">1</span>
+					/
+					<span class="fraction__total">3</span>
+				</div>
+				<div class="offer__bottom">
+					<div class="offer__btns">
+						<div class="offer__btn__prev">
+							<img src="./assets/icons/circle-arrow-left.svg" alt="" />
+						</div>
+						<div class="offer__btn__next">
+							<img src="./assets/icons/circle-arrow-rigth.svg" alt="" />
+						</div>
+					</div>
+					<div class="offer__pagination"></div>
+					<a href="#about" class="offer__link">Подробнее о нас</a>
+				</div>
+			</div>
+		</main>
+		<div id="about" class="about">
+			<img src="./assets/imgs/about-fon.jpg" alt="" class="about-fon" />
+			<div class="about__container">
+				<div class="about__content">
+					<span class="span-text">О КОМПАНИИ</span>
+					<h2>Сила объединения</h2>
+					<p class="sub about__sub with_note">
+						«AAT Group» — это группа компаний, где синергия усилий направлена на достижение общего успеха, процветание бизнеса и благополучия всей страны.
+						<br /><br />
+						Мы команда профессионалов, которые верят в силу командной работы, стремятся к достижению общих целей и готовы делиться своим опытом и знаниями.
+						<br /><br />
+						Наша миссия — помогать партнерам добиваться успеха вместе с нами.
+					</p>
+					<div class="flex-center">
+						<span class="about__num">500</span>
+						<p class="sub about__num__sub">Высококвалифицированных специалистов в компании</p>
+					</div>
+				</div>
+				<img src="./assets/imgs/about-img.png" alt="" class="about-img" />
+			</div>
+		</div>
+		<div class="hope">
+			<img src="./assets/imgs/hope-fon.png" alt="" class="hope-fon" />
+			<div class="hope__container">
+				<div class="hope__img__contanier">
+					<img src="./assets/icons/logo.svg" alt="" class="hope__logo" />
+				</div>
+				<div class="hope__content">
+					<h3>Надежные решения</h3>
+					<p class="sub-secondary">Предлагаем надежные продукцию, решения и услуги, соответствующие самым высоким стандартам качества</p>
+					<a href="#partners" class="hope__btn">НАШИ ПАРТНЕРЫ</a>
+				</div>
+			</div>
+			<div class="hope__line"></div>
+		</div>
+		<div id="mission" class="mission">
+			<img src="./assets/imgs/mission-fon.jpg" alt="" class="mission-fon" />
+			<img src="./assets/icons/bottim-line.svg" alt="" class="bottom-line" />
+			<div class="mission__container">
+				<span class="span-text">МИССИЯ И ЦЕННОСТИ</span>
+				<h2 class="mission__title">Лидерство и инновации</h2>
+				<p class="sub with_note">
+					Мы предлагаем надежные решения, услуги и продукцию для успеха наших клиентов, объединяя профессионализм, опыт и ресурсы группы компаний
+				</p>
+				<div class="mission__cards">
+					<div class="mission__card">
+						<div class="mission__card__container">
+							<img src="./assets/icons/hand.svg" alt="" class="card__img" />
+							<h4 class="card__title">Профессионализм</h4>
+							<p class="sub-secondary">Высочайший уровень профессионализма в каждой сфере деятельности</p>
+						</div>
+					</div>
+					<div class="mission__card">
+						<div class="mission__card__container">
+							<img src="./assets/icons/stabilnost.svg" alt="" class="card__img" />
+							<h4 class="card__title">Стабильность</h4>
+							<p class="sub-secondary">Обеспечиваем долгосрочные и стабильные партнерские отношения</p>
+						</div>
+					</div>
+					<div class="mission__card">
+						<div class="mission__card__container">
+							<img src="./assets/icons/heart-hand.svg" alt="" class="card__img" />
+							<h4 class="card__title">Соц. ответственность</h4>
+							<p class="sub-secondary">Бережно относимся к окружающей среде, поддерживая соц. проекты</p>
+						</div>
+					</div>
+					<div class="mission__card">
+						<div class="mission__card__container">
+							<img src="./assets/icons/sotrudnichestvo.svg" alt="" class="card__img" />
+							<h4 class="card__title">Сотрудничество</h4>
+							<p class="sub-secondary">Ценим взаимовыгодное сотрудничество с нашими партнерами и клиентами</p>
+						</div>
+					</div>
+				</div>
+				<div class="numbers">
+					<div class="flex-center">
+						<h2 class="numbers__title">Компания в цифрах</h2>
+						<a href="#cariere" class="numbers__btn">КАРЬЕРА</a>
+					</div>
+					<div class="nums">
+						<div class="num__item">
+							<span class="num plus">14</span>
+							<p class="num__sub">Лет на рынке</p>
+						</div>
+						<div class="num__item">
+							<span class="num country">12</span>
+							<p class="num__sub">Страны экспорта</p>
+						</div>
+						<div class="num__item">
+							<span class="num plus">7000</span>
+							<p class="num__sub">Действующих клиентов</p>
+						</div>
+						<div class="num__item">
+							<span class="num plus">500</span>
+							<p class="num__sub">Специалистов в штате</p>
+						</div>
+					</div>
+					<div class="numbers__content">
+						<p class="sub-secondary numbers__sub">Мы постоянно ищем новые и лучшие решения, внедряя передовые технологии и инновации.</p>
+						<img src="./assets/icons/people.svg" alt="" class="people" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="partners" class="partners">
+			<img src="./assets/imgs/partners__img.svg" alt="" class="partners__img" />
+			<div class="partnres__container">
+				<span class="span-text">НАМ ДОВЕРЯЮТ</span>
+				<h2>Наши партнеры</h2>
+				<div class="flex-center">
+					<p class="sub with_note">Мы — ведущая управляющая компания, объединяющая ключевые бизнес-направления для создания мощного и стабильного холдинга</p>
+					<div class="btns">
+						<img src="./assets/icons/circle-arrow-left-maincolor.svg" alt="" class="partners__btn__prev" />
+						<img src="./assets/icons/circle-arrow-right-maincolor.svg" alt="" class="partners__btn__next" />
+					</div>
+				</div>
+				<div class="swiper partners__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-1.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-2.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-3.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-4.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-5.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-6.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-7.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-8.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-9.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-10.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-12.svg" alt="" class="partners__slider__img" /></div>
+						<div class="swiper-slide"><img src="./assets/imgs/partners__slider-13.svg" alt="" class="partners__slider__img" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="gallery">
+			<img src="./assets/imgs/gallery-1.jpg" alt="" class="gallery__img" />
+			<img src="./assets/imgs/gallery-2.jpg" alt="" class="gallery__img" />
+			<img src="./assets/imgs/gallery-3.jpg" alt="" class="gallery__img" />
+			<img src="./assets/imgs/gallery-4.jpg" alt="	" class="gallery__img" />
+		</div>
+		<div id="cariere" class="vacations">
+			<img src="./assets/imgs/vacantions-fon.jpg" alt="" class="vacantion-fon" />
+			<div class="vacations__container">
+				<span class="span-text">ВАКАНСИИ</span>
+				<h2>Актуальные вакансии</h2>
+				<div class="flex-center">
+					<p class="sub with_note">
+						В AAT Group мы стремимся не только к профессиональному росту, но и к созданию комфортной и поддерживающей рабочей среды для каждого нашего
+						сотрудника
+					</p>
+					<div class="btns">
+						<img src="./assets/icons/circle-arrow-left-maincolor.svg" alt="" class="vacations__btn__prev" />
+						<img src="./assets/icons/circle-arrow-right-maincolor.svg" alt="" class="vacations__btn__next" />
+					</div>
+				</div>
+				<div class="swiper vacations__slider">
+					<div class="swiper-wrapper vacation__cards">
+						<div class="swiper-slide vacation__card">
+							<img src="./assets/icons/person.svg" alt="" class="card__img" />
+							<h4 class="card__title">Вакансия</h4>
+							<p class="sub-secondary">Краткое описание вакансии ое описание в ое описание в</p>
+						</div>
+						<div class="swiper-slide vacation__card">
+							<img src="./assets/icons/person.svg" alt="" class="card__img" />
+							<h4 class="card__title">Вакансия</h4>
+							<p class="sub-secondary">Краткое описание вакансии</p>
+						</div>
+						<div class="swiper-slide vacation__card">
+							<img src="./assets/icons/person.svg" alt="" class="card__img" />
+							<h4 class="card__title">Вакансия</h4>
+							<p class="sub-secondary">Краткое описание вакансии</p>
+						</div>
+						<div class="swiper-slide vacation__card">
+							<img src="./assets/icons/person.svg" alt="" class="card__img" />
+							<h4 class="card__title">Вакансия</h4>
+							<p class="sub-secondary">Краткое описание вакансии</p>
+						</div>
+						<div class="swiper-slide vacation__card">
+							<img src="./assets/icons/person.svg" alt="" class="card__img" />
+							<h4 class="card__title">Вакансия</h4>
+							<p class="sub-secondary">Краткое описание вакансии</p>
+						</div>
+						<div class="swiper-slide vacation__card">
+							<img src="./assets/icons/person.svg" alt="" class="card__img" />
+							<h4 class="card__title">Вакансия</h4>
+							<p class="sub-secondary">Краткое описание вакансии</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="replacer">
-				
+		</div>
+		<div id="buissnes" class="projects">
+			<h2>Другие наши проекты</h2>
+			<div class="projects__cards">
+				<a href="" class="projects__card">
+					<img src="./assets/imgs/project-1.png" alt="" class="card__img" />
+					<div class="card__content">
+						<span class="url">www.website.uz</span>
+						<h6 class="card__title">Проект 1</h6>
+						<p class="card__sub">Описание проекта Описание проекта Описание проекта Описание проекта Описание проекта</p>
+					</div>
+				</a>
+				<a href="" class="projects__card">
+					<img src="./assets/imgs/project-2.png" alt="" class="card__img" />
+					<div class="card__content">
+						<span class="url">www.website.uz</span>
+						<h6 class="card__title">Проект 2</h6>
+						<p class="card__sub">Описание проекта</p>
+					</div>
+				</a>
+				<a href="" class="projects__card">
+					<img src="./assets/imgs/project-3.png" alt="" class="card__img" />
+					<div class="card__content">
+						<span class="url">www.website.uz</span>
+						<h6 class="card__title">Проект 3</h6>
+						<p class="card__sub">Описание проекта</p>
+					</div>
+				</a>
 			</div>
-		</main>
+		</div>
+		<!-- footer start -->
+		<footer id="contacts">
+			<div class="footer__content">
+				<span class="span-text">СВЯЖИТЕСЬ С НАМИ</span>
+				<h2>Наши контакты</h2>
+				<p class="sub-secondary">
+					Если у вас возникли какие-либо вопросы или вам нужна дополнительная информация, мы всегда на связи. Оставьте заявку, и наши специалисты свяжутся с
+					вами в кратчайшие сроки.
+				</p>
+				<div class="phone">
+					<span>Номер телефона</span>
+					<a href="tel:+998 (55) 514-90-00">+998 (55) 514-90-00</a>
+				</div>
+				<a href="mail:info@aat-group.uz" class="mail">info@aat-group.uz</a>
+				<div class="socialmedia">
+					<a href="" target="_blank" class="telegram">
+						<img src="./assets/icons/socmedia-1.svg" alt="" />
+					</a>
+					<a href="" target="_blank" class="instagram">
+						<img src="./assets/icons/socmedia-2.svg" alt="" />
+					</a>
+					<a href="" target="_blank" class="facebook">
+						<img src="./assets/icons/socmedia-3.svg" alt="" />
+					</a>
+				</div>
+				<p class="address">
+					г.Ташкент, Юнусабадский район, проспект Амира Темура, 107Б<br /><br />
+					<strong>AAT GROUP | Узбекистан</strong>
+				</p>
+			</div>
+			<form>
+				<input type="text" class="name" placeholder="Ваше имя" />
+				<input type="tel" class="phone" placeholder="Номер телефона" />
+				<textarea type="text" class="comment" placeholder="Комментарий"></textarea>
+				<a href="" class="form__btn">Оставить заявку →</a>
+				<span>Нажимая на кнопку, вы соглашаетесь на обработку ваших персональных данных.</span>
+			</form>
+		</footer>
+		<div class="footer__bottom">
+			<a href="http://icorp.uz/web" target="_blank" class="icorp">⚡ Разработано iCORP</a>
+			<span class="copyrights">© 2024 | Все права защищены</span>
+		</div>
+		<!-- footer end -->
 	</body>
 </html>

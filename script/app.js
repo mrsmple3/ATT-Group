@@ -1,10 +1,12 @@
 (function ($) {
-	let $minWidthMobile = window.innerWidth < 1050 ? false : true;
-
-	window.addEventListener("resize", function () {
-		$minWidthMobile = window.innerWidth < 1050 ? false : true;
-	});
 	$(document).ready(function () {
+		let $minWidthMobile = window.innerWidth < 1050 ? false : true;
+		let $flag = true;
+
+		window.addEventListener("resize", function () {
+			console.log("Window resized");
+			$minWidthMobile = window.innerWidth < 1050 ? false : true;
+		});
 		function size(px) {
 			const conversionFactor = 24;
 			const index = window.innerWidth * 0.01 + window.innerHeight * 0.01;
@@ -60,7 +62,72 @@
 				});
 			}
 		}
+		counter($(".nums .num"));
+		//!base
+		function hashto($hashLink) {
+			$hashLink.on("click", function (event) {
+				// Проверяем, есть ли хэш в атрибуте href
+				if (this.hash !== "") {
+					// Останавливаем стандартное поведение ссылки
+					event.preventDefault();
 
-		//!numerical
+					if ($(".mobile-menu").hasClass("active")) {
+						$flag = false;
+						$(".burger-btn__container").removeClass("active");
+						$(".mobile-menu").removeClass("active");
+						$("body").removeClass("overflow-hidden");
+						setTimeout(() => {
+							$flag = true;
+						}, 500);
+					}
+
+					// Сохраняем хэш
+					var hash = this.hash;
+					const top = $(hash).offset().top;
+					// Плавная прокрутка до элемента с соответствующим ID
+					$("html, body").animate(
+						{
+							scrollTop: top,
+						},
+						800,
+						function () {
+							// Добавляем хэш в URL после завершения прокрутки
+							window.location.hash = hash;
+						}
+					);
+				}
+			});
+		}
+
+		hashto($(".nav__item"));
+		hashto($(".offer__link"));
+		hashto($(".mobile-menu__item"));
+		hashto($("header .contact-btn"));
+		hashto($(".hope__btn"));
+		hashto($(".numbers__btn"));
+
+		//!mobile
+		function burgerBtn($burgerBtn, $menu) {
+			$burgerBtn.click(function () {
+				if ($(this).hasClass("active") && $flag) {
+					$flag = false;
+					$(this).removeClass("active");
+					$menu.removeClass("active");
+					$("body").removeClass("overflow-hidden");
+					setTimeout(() => {
+						$flag = true;
+					}, 500);
+				} else if ($flag) {
+					$flag = false;
+					$(this).addClass("active");
+					$menu.addClass("active");
+					$("body").addClass("overflow-hidden");
+					setTimeout(() => {
+						$flag = true;
+					}, 500);
+				}
+			});
+		}
+		burgerBtn($(".burger-btn__container"), $(".mobile-menu"));
 	});
 })(jQuery);
