@@ -1206,6 +1206,12 @@ main {
 	position: relative;
 	width: 100vw;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) -120%, #000b12 100%);
+	&.inactive {
+		display: none;
+	}
+	&.active {
+		display: block;
+	}
 	.vacantion-fon {
 		position: absolute;
 		top: 0;

@@ -64,6 +64,15 @@
 		}
 		counter($(".nums .num"));
 		//!base
+
+		function handleBlocs($block) {
+			const $condition = $block.data("condition");
+			console.log($block);
+			$block.addClass($condition);
+		}
+
+		handleBlocs($(".vacations"));
+
 		function hashto($hashLink) {
 			$hashLink.on("click", function (event) {
 				// Проверяем, есть ли хэш в атрибуте href
